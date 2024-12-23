@@ -206,9 +206,12 @@
         // });
         (function () {
             console.log('Chat Invite');
-            console.log(document.getElementById('rejectInvite'));
-            document.getElementById('rejectInvite').onclick = (function () {
-                console.log('rejecting');
+            document.getElementById('acceptInvite').onclick = (function () {
+                console.log('acceptInvite');
+		document.getElementById('chatFrame').contentWindow.postMessage({
+			isChatFrame: true,
+			acceptInvite: true
+        		}, '*'););
             });
 
             // document.getElementById('rejectInvite').onclick = function () {
