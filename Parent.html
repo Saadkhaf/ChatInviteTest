@@ -208,7 +208,7 @@
             console.log('Chat Invite');
             document.getElementById('acceptInvite').onclick = (function () {
                 console.log('acceptInvite');
-		document.getElementById('chatFrame').contentWindow.postMessage({
+		document.getElementById('chatFrame').postMessage({
 			isChatFrame: true,
 			acceptInvite: true
         		}, '*'););
