@@ -68,10 +68,10 @@
         }
         window.onload = helpButtonLoaded();
         window.onmessage = function (e) {
-          console.log('e.data', e.data);
-        if (e.data = 'closeInvite'){
-          embedded_svc.inviteAPI.inviteButton.rejectInvite();
-        }
+          console.log('e.  ', e);
+          if (e.data = 'closeInvite'){
+            embedded_svc.inviteAPI.inviteButton.rejectInvite();
+          }
         }
   
         var initESW = function(gslbBaseURL) {
